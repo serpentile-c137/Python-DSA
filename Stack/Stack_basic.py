@@ -30,3 +30,14 @@ print("Size of stack:", size)
 
 # Displaying the current stack
 print("Current stack:", stack)
+
+
+# Output:
+
+# Current stack: [1, 2, 3, 4, 5]
+# Popped element: 5
+# Current stack: [1, 2, 3, 4]
+# Top element: 4
+# Is stack empty?:  False
+# Size of stack: 4
+# Current stack: [1, 2, 3, 4]

@@ -60,3 +60,13 @@ print("Top element:", top_ele)
 
 # size operation
 print("Size of stack:", stack.size())
+
+
+# Output:
+
+# Is stack empty?: True
+# Current stack: [1, 2, 3]
+# Popped element: 3
+# Current stack: [1, 2]
+# Current stack after pushing 4 and 5: [1, 2, 4, 5]
+# Top element: 5
