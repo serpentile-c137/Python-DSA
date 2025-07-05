@@ -1,3 +1,4 @@
+# complexity: O(n)
 def LinearSearch(arr, target):
     for idx, val in enumerate(arr):
         if val == target:
