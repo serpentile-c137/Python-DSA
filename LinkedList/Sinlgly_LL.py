@@ -7,7 +7,8 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def print(self):
+    # def print(self):
+    def __str__(self):
         if self.head is None:
             print("Linked list is empty")
             return
@@ -17,6 +18,7 @@ class LinkedList:
             llstr += str(itr.data)+' --> ' if itr.next else str(itr.data)
             itr = itr.next
         print(llstr)
+        return llstr
 
     def get_length(self):
         count = 0
@@ -91,11 +93,13 @@ if __name__ == '__main__':
     ll.insert_values(["banana","mango","grapes","orange"])
     ll.insert_at(1,"blueberry")
     ll.remove_at(2)
-    ll.print()
+    # ll.print()
+    print(ll)  # Using __str__ method for printing
 
     ll.insert_values([45,7,12,567,99])
     ll.insert_at_end('peach')
-    ll.print()
+    # ll.print()
+    print(ll)  # Using __str__ method for printing
 
 
 # Output:
