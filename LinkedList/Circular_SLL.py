@@ -203,6 +203,39 @@ class CSLinkedList:
         self.tail = None
         self.length = 0
 
+    def delete_by_value(self, value):
+        if self.length == 0:  # If the list is empty
+            return False
+ 
+        # Handle the case where the list has only one node
+        if self.head == self.tail and self.head.value == value:
+            self.head = None
+            self.tail = None
+            self.length = 0
+            return True
+ 
+        prev = None
+        current = self.head
+        while True:
+            if current.value == value:  # Node to delete is found
+                if current == self.head:  # Node is at the head
+                    self.head = current.next
+                    self.tail.next = self.head
+                else:
+                    prev.next = current.next
+                    if current == self.tail:  # Node is at the tail
+                        self.tail = prev
+                
+                self.length -= 1
+                return True
+ 
+            prev = current
+            current = current.next
+            if current == self.head:  # If we have traversed the entire list
+                break
+ 
+        return False  # Node with the value was not found
+
 
 
 
