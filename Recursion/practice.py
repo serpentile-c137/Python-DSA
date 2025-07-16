@@ -1,4 +1,5 @@
 def recursionMethod(n):
+    print(f"calling recursionMethod({n})")
     if n < 1:
         print("n is less than 1, returning...")
     else:
@@ -7,6 +8,6 @@ def recursionMethod(n):
 
 if __name__ == "__main__":
     n = 5
-    print(f"Starting recursion with n = {n}")
+    print(f"Starting recursion with n = {n}\n")
     recursionMethod(n)
-    print("Recursion completed.")
+    print("\nRecursion completed.")
