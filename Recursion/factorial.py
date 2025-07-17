@@ -1,5 +1,5 @@
 def factorial(n):
-    assert n >= 0, "n must be a non-negative integer"
+    assert n >= 0 and int(n) == n, "n must be a non-negative integer"
     if n in [0,1]:
         return 1
     else:
